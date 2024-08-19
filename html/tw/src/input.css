@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-rrr {
-    color: red;
+@layer base{
+    .button {
+
+    }
+}
+
+@layer components{
+    .btn{
+        @apply rounded-md px-2 py-2 border border-spacing-1.5  hover:bg-slate-100;
+    }
+    .btn-primary{
+        @apply text-white bg-blue-300 hover:bg-blue-500 px-2 py-1 rounded-md;
+    }
+}
+
+@layer utilities{
+    .text-rrr {
+        color: red;
+    }
 }
